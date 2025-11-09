@@ -3,25 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ハンバーガーメニュー</title>
+  <title>モダンなウェブサイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="header">
+    <div class="logo">ModernSite</div>
     <nav class="navbar">
-      <div class="logo">🍔 サンプルサイト</div>
-      <button class="hamburger" id="hamburger">&#9776;</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#">ホーム</a></li>
-        <li><a href="#">Servie</a></li>
-        <li><a href="#">お問い合わせ</a></li>
+      <ul class="nav-links">
+        <li><a href="#hero">ホーム</a></li>
+        <li><a href="#about">概要</a></li>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
       </ul>
     </nav>
+    <button class="hamburger" id="hamburger">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
   </header>
+
   <main>
-    <h1>ようこそ！</h1>
-    <p>Gitの練習用_UPDATE</p>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>未来へようこそ</h1>
+        <p>洗練されたモダンで動きのあるウェブサイト体験</p>
+        <a href="#about" class="cta-button">詳しく見る</a>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>私たちについて</h2>
+      <p>美しく機能的なウェブサイトの制作に取り組んでいます。</p>
+    </section>
+
+    <section id="services" class="content-section bg-dark">
+      <h2>サービス内容</h2>
+      <p>ウェブデザイン、開発、SEO対策</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>お問い合わせ</h2>
+      <p>contact@modernsite.com</p>
+    </section>
   </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 ModernSite. All Rights Reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
